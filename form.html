@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+</head>
+<body>
+
+    <h1>Student Admission Form</h1>
+    <hr>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text">
+        <br><br>
+        <label>Email Address</label>
+        <input type="email">
+        <br><br>
+        
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <br><br>
+
+        <label>Address</label>
+        <br>
+        <textarea cols="30" rows="5"></textarea>
+
+        <br><br>
+
+        <label>State of Residence</label>
+        <select>
+            <option>Uttar Pradesh</option>
+            <option>Delhi</option>
+            <option>Punjab</option>
+            <option>Maharashtra</option>
+            <option>Bihar</option>
+        </select>
+
+        <br><br>
+
+        <label>Select Intermediate Board</label>
+        <input type="text" list="board">
+
+        <datalist id="board">
+            <option>CBSE</option>
+            <option>ISC</option>
+            <option>UP Board</option>
+        </datalist>
+
+        <br><br>
+
+        <button>Submit</button>
+
+    </form>    
+
+</body>
+</html>
