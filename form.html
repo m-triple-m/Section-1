@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Admission Form</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <h1>Student Admission Form</h1>
-    <hr>
+    <hr />
 
     <form>
+      <label>Full Name</label>
+      <input type="text" required minlength="4" />
+      <br /><br />
+      <label>Email Address</label>
+      <input type="email" required />
+      <br /><br />
 
-        <label>Full Name</label>
-        <input type="text">
-        <br><br>
-        <label>Email Address</label>
-        <input type="email">
-        <br><br>
-        
-        <label>Date of Birth</label>
-        <input type="date">
+      <label>Date of Birth</label>
+      <input type="date" />
 
-        <br><br>
+      <br /><br />
 
-        <label>Address</label>
-        <br>
-        <textarea cols="30" rows="5"></textarea>
+      <label>Age</label>
+      <input type="number" min="16" max="99" />
 
-        <br><br>
+      <br /><br />
 
-        <label>State of Residence</label>
-        <select>
-            <option>Uttar Pradesh</option>
-            <option>Delhi</option>
-            <option>Punjab</option>
-            <option>Maharashtra</option>
-            <option>Bihar</option>
-        </select>
+      <label>Address</label>
+      <br />
+      <textarea cols="30" rows="5"></textarea>
 
-        <br><br>
+      <br /><br />
 
-        <label>Select Intermediate Board</label>
-        <input type="text" list="board">
+      <label>State of Residence</label>
+      <select>
+        <option>Uttar Pradesh</option>
+        <option>Delhi</option>
+        <option>Punjab</option>
+        <option>Maharashtra</option>
+        <option>Bihar</option>
+      </select>
 
-        <datalist id="board">
-            <option>CBSE</option>
-            <option>ISC</option>
-            <option>UP Board</option>
-        </datalist>
+      <br /><br />
 
-        <br><br>
+      <label>Select Intermediate Board</label>
+      <input type="text" list="board" />
 
-        <button>Submit</button>
+      <datalist id="board">
+        <option>CBSE</option>
+        <option>ISC</option>
+        <option>UP Board</option>
+      </datalist>
 
-    </form>    
+      <br /><br />
 
-</body>
+      <label for="">Gender</label>
+      <input type="radio" name="gender" /> Male
+      <input type="radio" name="gender" /> Female
+
+      <br /><br />
+
+      <input type="checkbox" /> I Accept Terms & Conditions
+
+      <details>
+        <summary>Terms & Conditions</summary>
+        <p>
+          Lorem ipsum dolor <mark> sit amet consectetur adipisicing </mark> elit. Tempora quo
+          perferendis dolorem corporis officia fugit esse unde, odio dolor
+          aperiam! Animi, necessitatibus ipsam quia laudantium eveniet fugit
+          odit sit ratione?
+        </p>
+      </details>
+
+      <br /><br />
+
+      <button>Submit</button>
+    </form>
+  </body>
 </html>
