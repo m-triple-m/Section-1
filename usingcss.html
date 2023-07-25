@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Using CSS</title>
 
+    
+
     <style>
+
+        .external{
+            color: chartreuse;
+        }
 
         p{
             color: blue;
             font-size: 60px;
         }
+
+        .myclass2{
+            text-align: right;
+        }
+
         .myclass{
             text-align: center;
             font-size: 40px;
@@ -20,10 +31,13 @@
         #myid{
             font-size: 70px;
             background-color: blueviolet;
-            color: white;
+            color: white !important;
         }
 
+        
     </style>
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -34,9 +48,11 @@
 
     <p class="myclass">Name Selectors are used to select elements by their tag name</p>
 
-    <h3 class="myclass">Class Selectors are used to select elements by their class name</h3>
+    <h3 class="myclass2 myclass">Class Selectors are used to select elements by their class name</h3>
 
-    <p class="myclass" id="myid" style="color: yellow;">ID Selectors are used to select elements uniquely by their id name</p>
+    <p class="myclass" id="myid" style="color: yellow;" >ID Selectors are used to select elements uniquely by their id name</p>
+
+    <p class="external">External CSS is used to apply CSS on multiple pages at once</p>
 
 </body>
 </html>
