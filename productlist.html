@@ -30,6 +30,12 @@
         transform: translateZ(50px);
       }
 
+      .my-img{
+        height: 350px;
+        object-fit: contain;
+        /* background-color: red; */
+      }
+
     </style>
 
   </head>
@@ -58,7 +64,7 @@
         <div class="col-md-4 mb-4">
           <div class="card">
             <img
-              class="card-img-top"
+              class="card-img-top my-img"
               src="https://www.instax.in/cdn/shop/products/1_4ed4bd65-7357-411b-bf02-d6f9ca79b793.png?v=1673867172"
               alt=""
             />
@@ -84,7 +90,33 @@
         <div class="col-md-4 mb-4">
           <div class="card">
             <img
-              class="card-img-top"
+              class="card-img-top my-img"
+              src="https://i.gadgets360cdn.com/products/cameras/large/1548234761_832_canon_eos-m50-24-1mp-dslr-camera.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <p class="fw-bold h4 text-muted">InstaX</p>
+              <h3>Mini9 Camera</h3>
+              <p>
+                <i class="fa-solid fa-star text-warning"></i> 4.5 Stars from
+                8362 Reviews
+              </p>
+              <h2>₹4,999.00</h2>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary w-50">
+                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+              </button>
+              <button class="btn btn-outline-primary">
+                <i class="fa-solid fa-bolt-lightning"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top my-img"
               src="https://www.instax.in/cdn/shop/products/1_4ed4bd65-7357-411b-bf02-d6f9ca79b793.png?v=1673867172"
               alt=""
             />
@@ -110,33 +142,7 @@
         <div class="col-md-4 mb-4">
           <div class="card">
             <img
-              class="card-img-top"
-              src="https://www.instax.in/cdn/shop/products/1_4ed4bd65-7357-411b-bf02-d6f9ca79b793.png?v=1673867172"
-              alt=""
-            />
-            <div class="card-body">
-              <p class="fw-bold h4 text-muted">InstaX</p>
-              <h3>Mini9 Camera</h3>
-              <p>
-                <i class="fa-solid fa-star text-warning"></i> 4.5 Stars from
-                8362 Reviews
-              </p>
-              <h2>₹4,999.00</h2>
-            </div>
-            <div class="card-footer">
-              <button class="btn btn-primary w-50">
-                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-              </button>
-              <button class="btn btn-outline-primary">
-                <i class="fa-solid fa-bolt-lightning"></i> Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img
-              class="card-img-top"
+              class="card-img-top my-img"
               src="https://www.instax.in/cdn/shop/products/1_4ed4bd65-7357-411b-bf02-d6f9ca79b793.png?v=1673867172"
               alt=""
             />
@@ -221,7 +227,7 @@
     <script>
 
       VanillaTilt.init( document.querySelectorAll('.card') , {
-        max: 25,
+        max: 10,
         speed: 1000,
         // glare: true,
       });
