@@ -35,3 +35,4 @@ movies.splice(3, 2);
 
 console.log(movies);
 
+console.log( movies.slice( 1, 3 ) );
