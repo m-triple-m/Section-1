@@ -15,7 +15,7 @@ console.log(movies);
 
 // Indexing
 console.log(movies[5]); // also works with strings
-console.log(movies[-4]);
+console.log(movies[-4]); // not works
 
 console.log(movies.at(-5))
 
@@ -34,3 +34,4 @@ console.log(movies);
 movies.splice(3, 2);
 
 console.log(movies);
+
